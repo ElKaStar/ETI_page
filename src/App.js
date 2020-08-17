@@ -1,12 +1,16 @@
 import React from 'react';
-import NavBar from './navbar'
+import {Route, Switch} from "react-router-dom";
+import Content from "./Content";
+import ContactPage from "./ContactPage";
+
 
 
 function App() {
   return (
-    <div className="container">
-      <NavBar />
-    </div>
+   <Switch>
+     <Route path='/' exact render={() => <Content />}/>
+     <Route path='/contacts' exact render={() => <ContactPage />}/>
+   </Switch>
   );
 }
 
