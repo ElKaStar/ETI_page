@@ -4,7 +4,13 @@ export const Contacts = () => {
 
     return (
         <main>
+<<<<<<< HEAD
             <section className="hero py-6 py-lg-7 text-white dark-overlay">
+=======
+            <section className="hero py-6 py-lg-7 text-white dark-overlay"><img
+                src="/content/img/photo/photo-1522143049013-2519756a52d4.jpg" className="bg-image"
+                alt="How can we help you today?"/>
+>>>>>>> master
                 <div className="overlay-content container">
                     <nav className="" aria-label="breadcrumb">
                         <ol className="breadcrumb text-white justify-content-center no-border mb-0">

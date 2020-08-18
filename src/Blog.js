@@ -3,7 +3,11 @@ import React from 'react'
 export const Blog = () => {
 
     return (
+<<<<<<< HEAD
         <section className="py-2">
+=======
+        <section className="py-5">
+>>>>>>> master
             <div className="bg-gray-100 py-5 px-3 px-lg-5 rounded-lg shadow-sm container">
                 <div className="row">
                     <div className="col-lg-5">
