@@ -50,28 +50,71 @@ export const Header = () => {
             <ul className="ml-auto navbar-nav">
               <li className="nav-item">
                 <NavLink
+                  aria-haspopup="true"
+                  className="nav-link"
+                  aria-expanded="false"
                   to="/"
                   className="nav-link"
                 >
                   Home
                 </NavLink>
               </li>
-              <div>
-                <div className="dropdown">
-                  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Menu
-                  </button>
-                  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Another action</a>
-                    <a className="dropdown-item" href="#">Something else here</a>
+              <li className="position-static dropdown nav-item">
+                <a
+                  aria-haspopup="true"
+                  href="#"
+                  className="active dropdown-toggle nav-link"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <div
+                  tabIndex="-1"
+                  role="menu"
+                  aria-hidden="true"
+                  className=" megamenu py-lg-0 dropdown-menu"
+                >
+                  <div className="row">
+                    <div className="col-lg-9">
+                      <div className="p-3 pr-lg-0 pl-lg-5 pt-lg-5 row">
+                        <div className="col-lg-3">
+
+                          <ul className="megamenu-list list-unstyled">
+                            <li className="megamenu-list-item">
+                              <a
+                                href="/category-3"
+                                tabIndex="0"
+                                role="menuitem"
+                                className="megamenu-list-link dropdown-item"
+                              >
+                                Category - no map
+                              </a>
+                            </li>
+                            <li className="megamenu-list-item">
+                              <a
+                                href="/detail"
+                                tabIndex="0"
+                                role="menuitem"
+                                className="megamenu-list-link dropdown-item"
+                              >
+                                Restaurant detail
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <li className="nav-item">
                 <NavLink to="/contacts" className="nav-link">
                   Contact
+              </li>
+                </NavLink>
+              <li className="nav-item">
+                <NavLink to="/relax" className="nav-link">
+                  Relax
                 </NavLink>
               </li>
             </ul>
