@@ -24,9 +24,6 @@ export const Header = () => {
                   aria-label="Search"
                   className="border-0 shadow-0 bg-gray-200 form-control-sm form-control"
                 />
-                <button type="reset" className="btn btn-sm btn-reset">
-                  <i className="fas fa-times"></i>
-                </button>
               </div>
             </form>
           </div>
@@ -50,14 +47,14 @@ export const Header = () => {
             </svg>
           </button>
           <div className="collapse navbar-collapse">
-       
             <ul className="ml-auto navbar-nav">
               <li className="nav-item">
                 <NavLink
                   aria-haspopup="true"
-                  to='/'
                   className="nav-link"
                   aria-expanded="false"
+                  to="/"
+                  className="nav-link"
                 >
                   Home
                 </NavLink>
@@ -109,12 +106,12 @@ export const Header = () => {
                     </div>
                   </div>
                 </div>
-              </li>
+              </div>
               <li className="nav-item">
                 <NavLink to="/contacts" className="nav-link">
                   Contact
-                </NavLink>
               </li>
+                </NavLink>
               <li className="nav-item">
                 <NavLink to="/relax" className="nav-link">
                   Relax
