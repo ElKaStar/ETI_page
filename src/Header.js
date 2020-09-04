@@ -1,7 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useState } from 'react';
+import {Dropdown} from "./Dropdown";
 
 export const Header = () => {
+  
+  const [open, setOpen] = useState(false)
+  
+  
   return (
     <header className="header ">
       <nav className="shadow navbar navbar-expand-lg navbar-light bg-white fixed-top">
@@ -49,69 +55,20 @@ export const Header = () => {
           <div className="collapse navbar-collapse">
             <ul className="ml-auto navbar-nav">
               <li className="nav-item">
-                <NavLink
-                  aria-haspopup="true"
-                  className="nav-link"
-                  aria-expanded="false"
-                  to="/"
-                  className="nav-link"
-                >
+                <NavLink className="nav-link" to="/">
                   Home
                 </NavLink>
               </li>
-              <li className="position-static dropdown nav-item">
-                <a
-                  aria-haspopup="true"
-                  href="#"
-                  className="active dropdown-toggle nav-link"
-                  aria-expanded="false"
-                >
-                  Projects
-                </a>
-                <div
-                  tabIndex="-1"
-                  role="menu"
-                  aria-hidden="true"
-                  className=" megamenu py-lg-0 dropdown-menu"
-                >
-                  <div className="row">
-                    <div className="col-lg-9">
-                      <div className="p-3 pr-lg-0 pl-lg-5 pt-lg-5 row">
-                        <div className="col-lg-3">
-
-                          <ul className="megamenu-list list-unstyled">
-                            <li className="megamenu-list-item">
-                              <a
-                                href="/category-3"
-                                tabIndex="0"
-                                role="menuitem"
-                                className="megamenu-list-link dropdown-item"
-                              >
-                                Category - no map
-                              </a>
-                            </li>
-                            <li className="megamenu-list-item">
-                              <a
-                                href="/detail"
-                                tabIndex="0"
-                                role="menuitem"
-                                className="megamenu-list-link dropdown-item"
-                              >
-                                Restaurant detail
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <li
+                className="nav-item"
+                         >         
+                 <Dropdown className="nav-item" onClickHandler={() => setOpen(!open)} isOpen = {open}/>
+              </li>
               <li className="nav-item">
                 <NavLink to="/contacts" className="nav-link">
                   Contact
-              </li>
                 </NavLink>
+              </li>
               <li className="nav-item">
                 <NavLink to="/relax" className="nav-link">
                   Relax

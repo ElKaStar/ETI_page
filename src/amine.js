@@ -119,7 +119,7 @@ export function Anime(props) {
                 ...props.addParams
             })
         }
-    })
+    },[props, setParams])
 
     return (
         <div className="wrapper">

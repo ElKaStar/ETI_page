@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 
 export const Contacts = () => {
 
@@ -13,23 +14,41 @@ export const Contacts = () => {
                         </ol>
                     </nav>
                     <h1 className="hero-heading">How can we help you today?</h1></div></section>
-            <section className="py-6">
+            <section className="py-3">
                 <div className="container">
                     <div className="row">
-                        <div className="text-center text-md-left mb-4 mb-md-0 col-md-4">
-                            <h3 className="h5">Adress</h3><p className="text-muted">13/25 New Avenue<br/>New Heaven, 45Y
-                            73J<br/><span>England, <strong>Great Britain</strong></span></p></div>
-                        <div className="text-center text-md-left mb-4 mb-md-0 col-md-4">
-                            <h3 className="h5">Call center</h3><p className="text-muted">Sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.</p><p className="text-muted"><strong>+33 555
-                            444 333</strong></p></div>
-                        <div className="text-center text-md-left mb-4 mb-md-0 col-md-4">
-                            <h3 className="h5">Electronic support</h3><p className="text-muted">Please feel free to
-                            write an email to us or to use our electronic ticketing system.</p>
-                            <ul className="list-unstyled text-muted">
-                                <li>info@sell.com</li>
-                                <li>support@sell.com</li>
-                            </ul>
+                        <div className="text-center text-md-left mb-2 mb-md-0 col-md-4">
+                            <h3 className="h5 text-center">Telegram</h3>
+                          <p className="text-muted text-center mb-0"><strong>@telega</strong></p>
+                          <div className="special-ripple">
+                            <a href="tg://resolve?domain=devklondike" className="request-loader">
+                              <div>
+                                <img style={{width: "30px"}} src="https://icon-library.com/images/telegram-icon-png/telegram-icon-png-28.jpg"/>
+                              </div>
+                            </a>
+                        </div>
+                      </div>
+                       <div className="text-center text-md-left mb-2 mb-md-0 col-md-4">
+                            <h3 className="h5 text-center">Instagram</h3>
+                          <p className="text-muted text-center mb-0"><strong>elena.tikhonova</strong></p>
+                          <div className="special-ripple">
+                            <a href="tg://resolve?domain=devklondike" className="request-loader">
+                              <div>
+                                <img style={{width: "30px"}} src="https://mainatom.com/wp-content/uploads/2019/11/instagram.png"/>
+                              </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div className="text-center text-md-left mb-2 mb-md-0 col-md-4">
+                            <h3 className="h5 text-center">Email</h3>
+                          <p className="text-muted text-center mb-0"><strong>elena.tikhonova.apps@gmail.com</strong></p>
+                          <div className="special-ripple">
+                            <a href="tg://resolve?domain=devklondike" className="request-loader">
+                              <div>
+                                <img style={{width: "30px"}} src="https://cdn.iconscout.com/icon/free/png-512/apple-mail-493152.png"/>
+                              </div>
+                            </a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -67,14 +86,11 @@ export const Contacts = () => {
                         </div>
                         <div className="col-md-5">
                             <div className="pl-lg-4">
-                                <div><p className="text-muted">Effects present letters inquiry no an removed or friends.
-                                    Desire behind latter me though in. Supposing shameless am he engrossed up additions.
-                                    My possible peculiar together to. Desire so better am cannot he up before points.
-                                    Remember mistaken opinions it pleasure of debating. Court front maids forty if aware
-                                    their at. Chicken use are pressed removed. </p><p className="text-muted">Able an
-                                    hope of body. Any nay shyness article matters own removal nothing his forming. Gay
-                                    own additions education satisfied the perpetual. If he cause manor happy. Without
-                                    farther she exposed saw man led. Along on happy could cease green oh. </p></div>
+                                <div>
+                                  <p className="text-muted">
+                                    If you have any questions or would like to discuss further opportunities, 
+                                    please don't hesitate to get in touch.  </p>
+                                  </div>
 
                             </div>
                         </div>
